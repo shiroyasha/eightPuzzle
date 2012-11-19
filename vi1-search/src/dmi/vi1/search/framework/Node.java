@@ -17,7 +17,7 @@ public class Node {
 	private Object state;
 	private Node parent;	
 	private Action action;	
-	private double pathCost;
+	private double pathCost = 0.0;
 	
 	
 	
@@ -35,8 +35,8 @@ public class Node {
 	
 	public Node(Object state, Node parent, Action action, double stepCost){
 		this(state,parent,action);
-		this.pathCost = this.pathCost + stepCost;
-		
+		this.pathCost = parent.pathCost + stepCost;
+		// TODO promenio sam 
 	}
 	
 	/**

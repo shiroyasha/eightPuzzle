@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 import dmi.vi1.search.framework.*;
@@ -170,6 +171,8 @@ class ManhattanDistance implements HeuristicFunction {
 			}
 		}
 		
+		//System.out.println(state + " " + ret);
+		
 		return ret;
 	}
 	
@@ -300,6 +303,7 @@ public class Puzzle {
 		GraphSearch gs2 = new GraphSearch();
 		AStarSearch search1 = new AStarSearch( gs1, md);
 		AStarSearch search2 = new AStarSearch( gs2, hd);
+		
 		
 		long start = 0;
 		start = System.currentTimeMillis();

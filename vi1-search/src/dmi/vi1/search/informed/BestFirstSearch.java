@@ -33,7 +33,7 @@ public class BestFirstSearch extends PrioritySearch {
 			public int compare(Node n1, Node n2) {
 				Double f1 = evaluationFunction.f(n1);
 				Double f2 = evaluationFunction.f(n2);
-
+				//System.out.print("a");
 				return f1.compareTo(f2);
 			}
 		};

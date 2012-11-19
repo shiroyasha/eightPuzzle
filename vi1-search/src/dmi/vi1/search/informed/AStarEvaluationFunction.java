@@ -26,7 +26,8 @@ public class AStarEvaluationFunction implements EvaluationFunction {
 	
 	
 	@Override
-	public double f(Node n) {		
+	public double f(Node n) {
+		//System.out.println( gf.g(n) + " " + hf.h(n.getState()));
 		return gf.g(n)+hf.h(n.getState());
 	}
 

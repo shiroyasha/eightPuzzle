@@ -18,7 +18,7 @@ import dmi.vi1.search.datastructure.Queue;
 public abstract class QueueSearch {
 	
 	private Queue<Node> frontier = null;
-	private boolean checkGoalBeforeAddingToFrontier = false;
+	private boolean checkGoalBeforeAddingToFrontier = true;
 	
 	private int numberOfGeneratedNodes = 0;
 	private int numberOfExpandedNodes = 0;
